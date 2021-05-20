@@ -1,0 +1,30 @@
+div:hover {
+  border: solid 5px;
+}
+
+#cor-primaria {
+  background-color: #fee440;
+}
+
+#cor-secundaria {
+  background-color: #f3722c;
+}
+
+#cor-complementar {
+  background-color: #2ec4b6;
+  height: 100px;
+  line-height: 100px;
+}
+
+#cor-clara {
+  background-color: #d9d9d9;
+}
+
+#cor-escura {
+  background-color: #5e6472;
+  color: white;
+}
+
+h3 {
+  font-style: italic;
+}

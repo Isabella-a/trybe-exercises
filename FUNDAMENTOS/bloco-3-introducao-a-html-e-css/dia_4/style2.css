@@ -1,0 +1,7 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+.fundo-tabela {
+  background-color: rgb(179, 179, 179);
+}
