@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset id="personal-information">
+            <label for="name-input">Nome: 
+                <input type="text" id="name-input" required maxlength="40">
+            </label> <br>
+            <label for="email-input">Email: 
+                <input type="email" id="email-input" required maxlength="50">
+            </label><br>
+            <label for="cpf-input">CPF: 
+                <input type="text" id="cpf-input" required maxlength="11">
+            </label><br>
+            <label for="endereco-input">Endereço: 
+                <input type="text" id="endereco-input" required maxlength="200">
+            </label><br>
+            <label for="cidade-input">Cidade: 
+                <input type="text" id="cidade-input" required maxlength="28">
+            </label> <br>
+            
+            <label for="estados">Selecione seu estado: </label>
+            <select name="estados" id="estados" required>
+                <option disabled selected value>Selecione seu estado:</option>
+            </select><br>
+
+            <span>Tipo de imóvel:</span>
+            <input type="radio" value="apto" name="house-type" id="apto"><label for="apto">Apartamento</label>
+            <input type="radio" value="house" name="house-type" id="house"><label for="house">Casa</label>
+            
+        </fieldset>
+
+        <fieldset id="last-job">
+            <label for="resume">Resumo do currículo:
+               <br><textarea name="resume" id="resume" cols="30" rows="10" required maxlength="1000"></textarea>
+            </label><br>
+
+            <label for="title-job">Cargo
+                <input type="text" required maxlength="40" id="title-job">
+            </label><br>
+
+            <label for="job-description">Descrição do cargo:
+                <input type="text" id="job-description" required maxlength="500">
+            </label><br>
+
+            <label for="date-beginning">Data de início:
+                <input type="date" id="date-beginning" placeholder="dd/mm/aaaa" required>
+            </label>
+
+        </fieldset>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+<script src="script.js"></script>
+</body>
+</html>
