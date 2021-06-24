@@ -42,6 +42,7 @@ const removeVowels = (parameter2) => {
   return results;
 };
 
+console.log(removeVowels('Dayane'));
 const parameter2 = 'Dayane';
 const result2 = 'D1y2n3';
 
