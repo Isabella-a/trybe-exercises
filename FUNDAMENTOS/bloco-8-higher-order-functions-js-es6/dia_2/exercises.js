@@ -186,9 +186,21 @@ const expectedResult7 = false;
 
 function authorUnique() {
   // escreva seu código aqui
+  let result = true;
+
   books.forEach((book) => {
-   
-  });
+   const author1 = book.author.name;
+   const authorAge = book.author.birthYear; 
+   books.forEach((book2) => {
+    const author2 = book2.author.name;
+    const authorAge2 = book2.author.birthYear;
+
+    if (author1 !== author2 && authorAge === authorAge2) {
+      result = false;
+    }
+   })
+  })
+  return result;
 }
 
 assert.strictEqual(authorUnique(), expectedResult7);
